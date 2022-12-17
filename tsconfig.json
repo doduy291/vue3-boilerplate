@@ -2,14 +2,21 @@
   "extends": "@vue/tsconfig/tsconfig.web.json",
   "compilerOptions": {
     // Supplement some options from origin
-    "allowJs": true,
-    "allowUnreachableCode": false,
-    "useDefineForClassFields": true,
-    "noEmit": true,
+
+    /* Module */
     "baseUrl": ".",
     "paths": {
       "~/*": ["./src/*"]
-    }
+    },
+
+    /* JavaScript Support */
+    "allowJs": true,
+
+    /* Emit */
+    "noEmit": true,
+
+    /* Type Checking */
+    "allowUnreachableCode": false
   },
 
   "references": [
